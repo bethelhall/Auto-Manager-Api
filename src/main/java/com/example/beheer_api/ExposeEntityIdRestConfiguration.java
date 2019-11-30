@@ -1,5 +1,6 @@
 package com.example.beheer_api;
 
+import com.example.beheer_api.models.Car;
 import com.example.beheer_api.models.User;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
@@ -10,6 +11,6 @@ public class ExposeEntityIdRestConfiguration extends RepositoryRestConfigurerAda
 
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-        config.exposeIdsFor(Item.class, Bid.class, User.class, Role.class);
+        config.exposeIdsFor(User.class, Car.class);
     }
 }
