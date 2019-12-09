@@ -14,14 +14,12 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private int plate_number;
     private String model;
     private Long price;
     private String color;
-    private Long km;
-    private Long yrp;
-    private String eng_type;
+    private String km;
+    private String yr;
+    private String engine;
 
 
 }
